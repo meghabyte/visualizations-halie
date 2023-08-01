@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bellefair&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,600&family=Goudy+Bookletter+1911&family=IM+Fell+Double+Pica&family=IM+Fell+English&family=Raleway:ital,wght@0,100;0,500;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <br><br>
+    <h2>Crossword Puzzles Visualizations</h2>
+    <br>
+    <p>We provide both <i>static</i> and  <i>replay</i>  visualizations of users querying 4 different language models (LMs) to solve one of 5 different crossword puzzles.
+        You can use the search bar above to search for a particular username, sort by LM or puzzle, and click on the  <i>Open</i> and <i>Play</i>  buttons to open the visualization or replay for an interaction trace in your browser .  
+    </p>
+    <br><br>
+    <div id="wrapper"></div>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>

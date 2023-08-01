@@ -1,0 +1,31 @@
+#wrapper {
+    font-family: "DM Sans", sans-serif;
+    width:75%;
+    text-align: center;
+    margin: auto;
+
+}
+
+.button {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+}
+
+p {
+    font-family: "DM Sans", sans-serif;
+    width:65%;
+    text-align: center;
+    margin: auto;
+
+}
+
+h2 {
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    margin: auto;
+
+}
