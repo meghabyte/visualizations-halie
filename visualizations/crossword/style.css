@@ -1,5 +1,6 @@
 #wrapper {
     font-family: "DM Sans", sans-serif;
+    font-size: small;
     width:75%;
     text-align: center;
     margin: auto;
@@ -15,6 +16,15 @@
     border-color: black;
 }
 
+.replay-button {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    background-color: crimson;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: crimson;
+}
+
 p {
     font-family: "DM Sans", sans-serif;
     width:65%;
@@ -24,6 +34,13 @@ p {
 }
 
 h2 {
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    margin: auto;
+
+}
+
+h4 {
     font-family: "DM Sans", sans-serif;
     text-align: center;
     margin: auto;
