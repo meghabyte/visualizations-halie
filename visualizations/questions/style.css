@@ -6,6 +6,14 @@
 
 }
 
+#wrapper2 {
+    font-family: "DM Sans", sans-serif;
+    width:75%;
+    text-align: center;
+    margin: auto;
+
+}
+
 .button {
     font-family: "DM Sans", sans-serif;
     color: white;

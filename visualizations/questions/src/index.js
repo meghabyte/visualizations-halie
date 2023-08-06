@@ -2,7 +2,7 @@ new gridjs.Grid({
     search: true,
     sort: true,
     pagination: {
-        limit: 8
+        limit: 5
     },
     columns: [{
         id: 'username',
@@ -37,3 +37,122 @@ new gridjs.Grid({
         }
       }
   }).render(document.getElementById("wrapper"));
+
+new gridjs.Grid({
+    sort: true,
+    pagination: {
+        limit: 5
+    },
+    columns: [{
+        id: 'category',
+        name: 'MMLU Category'
+     }, {
+        id: 'model',
+        name: 'Model'
+     }, 
+     {
+      id: 'accuracy',
+      name: 'Accuracy (%)'
+   },
+   {
+        id: 'visualization',
+        name: 'Static Visualization'
+     }],
+    data: [{"category": "Global Facts",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_global_model_InstructDavinci.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "instruct-davinci",
+        "accuracy": 69},
+        {"category": "U.S. Foreign Policy",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_fp_model_InstructDavinci.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "instruct-davinci",
+        "accuracy": 70},
+        {"category": "College Chemistry",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_chem_model_InstructDavinci.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "instruct-davinci",
+        "accuracy": 60},
+        {"category": "Nutrition",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_nutrition_model_InstructDavinci.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "instruct-davinci",
+        "accuracy": 47},
+        {"category": "Miscellaneous",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_misc_model_InstructDavinci.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "instruct-davinci",
+        "accuracy": 89},
+        {"category": "Global Facts",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_global_model_Davinci.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "davinci",
+        "accuracy": 38},
+        {"category": "U.S. Foreign Policy",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_fp_model_Davinci.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "davinci",
+        "accuracy": 61},
+        {"category": "College Chemistry",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_chem_model_Davinci.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "davinci",
+        "accuracy": 32},
+        {"category": "Nutrition",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_nutrition_model_Davinci.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "davinci",
+        "accuracy": 35},
+        {"category": "Miscellaneous",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_misc_model_Davinci.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "davinci",
+        "accuracy": 78},
+        {"category": "Global Facts",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_global_model_InstructBabbage.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "instruct-babbage",
+        "accuracy": 44},
+        {"category": "U.S. Foreign Policy",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_fp_model_InstructBabbage.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "instruct-babbage",
+        "accuracy": 71},
+        {"category": "College Chemistry",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_chem_model_InstructBabbage.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "instruct-babbage",
+        "accuracy": 27},
+        {"category": "Nutrition",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_nutrition_model_InstructBabbage.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "instruct-babbage",
+        "accuracy": 47},
+        {"category": "Miscellaneous",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_misc_model_InstructBabbage.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "instruct-babbage",
+        "accuracy": 75},
+        {"category": "Global Facts",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_global_model_Jumbo.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "jumbo",
+        "accuracy": 38},
+        {"category": "U.S. Foreign Policy",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_fp_model_Jumbo.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "jumbo",
+        "accuracy": 71},
+        {"category": "College Chemistry",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_chem_model_Jumbo.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "jumbo",
+        "accuracy": 47},
+        {"category": "Nutrition",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_nutrition_model_Jumbo.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "jumbo",
+        "accuracy": 45},
+        {"category": "Miscellaneous",
+        "visualization": gridjs.html("<form action='https://meghabyte.github.io/visualizations-halie/visualizations/questions/static/topic_misc_model_Jumbo.html' method='get' target='_blank'><button class='button' type='submit'>Open</button></form>"),
+        "model": "jumbo",
+        "accuracy": 76}
+        ],
+    resizable: true,
+    style: {
+        table: {
+          border: '3px solid #ccc'
+        },
+        th: {
+          'background-color': 'rgba(207, 33, 108, 0.9)',
+          color: '#000',
+          'border-bottom': '3px solid #ccc',
+          'text-align': 'center'
+        },
+        td: {
+          'text-align': 'center',
+          'background-color': 'rgba(207, 33, 108, 0.2)',
+        }
+      }
+  }).render(document.getElementById("wrapper2"));
