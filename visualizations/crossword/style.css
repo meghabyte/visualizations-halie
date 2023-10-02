@@ -27,8 +27,17 @@
 
 p {
     font-family: "DM Sans", sans-serif;
-    width:65%;
+    width:60%;
     text-align: center;
+    margin: auto;
+
+}
+
+ol {
+    font-family: "DM Sans", sans-serif;
+    width:36%;
+    font-size:14px;
+    text-align: left;
     margin: auto;
 
 }

@@ -13,9 +13,15 @@
     <h2>Crossword Puzzles Visualizations</h2>
     <h4>Paper: <a href="https://arxiv.org/abs/2212.09746">Evaluating Human-Language Model Interaction</a> | <a href="https://github.com/stanford-crfm/halie">Raw Data & Code</a> | Contact:  <a href="mailto:megha@cs.stanford.edu">megha@cs.stanford.edu</a></h4>
     <br>
-    <p>We provide both <i>static</i> and  <i>replay</i>  visualizations of users querying 4 different language models (LMs) to solve one of 5 different crossword puzzles. We also report the final puzzle accuracy for each interaction trace (measured per letter).
+    <p>We provide both <i>static</i> and  <i>replay</i>  visualizations of users querying 4 different language models (LMs) to solve one of 5 different crossword puzzles. 
         You can use the search bar to search for a particular username, sort by columns, and click on the  <i>Open</i> and <i>Play</i>  buttons to open the visualization or replay for any particular interaction trace in your browser .  
-    </p>
+        <br><br>You can also filter by the final puzzle accuracy for each interaction trace (measured per letter), to see how users who achieved higher accuracy with a given LM might have interacted differently!
+      </p>
+      <br>
+      <p><span style="color:mediumvioletred"><strong>Advanced Features: </strong></span>
+        <ol><li>To increase/decrease the speed of any <i>replay</i> visualization, you can change the following URL parameter: <span style="color:mediumvioletred"><strong>?interval=20</strong><span>. 
+          <span style="color:black">Lower is faster, and the default value is 100.</span></li> 
+          <li>You can pause and resume any  <i>replay</i> visualization by <span style="color:mediumvioletred">clicking the space bar.</span></li></ol></p>
     <br><br>
     <div id="wrapper"></div>
     <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
